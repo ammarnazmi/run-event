@@ -1,0 +1,40 @@
+.description-container {
+  margin: 4rem 0;
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+
+.description-container h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.description-content {
+  background: #272f6f;
+  border-radius: 0.65rem;
+  top: -6rem
+}
+
+.description-card {
+  padding: 1.5rem;
+  cursor: grab;
+}
+
+.description-card i {
+  font-size: 2rem;
+  margin-top: 0.7rem;
+}
+
+.description-card h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+}
+
+.description-card p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #f1f1f6c0;
+}

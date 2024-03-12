@@ -1,0 +1,55 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero-container::after,
+.hero-container::before {
+  content: " ";
+  width: 28.125rem;
+  height: 28.125rem;
+  border-radius: 28.125rem;
+  background: #b8ddf3;
+  position: absolute;
+  z-index: -1;
+  filter: blur(255px);
+}
+
+.hero-container::after {
+  top: -3rem;
+  left: -5rem;
+}
+
+.hero-container::before {
+  bottom: 2rem;
+  right: 0rem;
+}
+
+.hero-content {
+  flex: 1;
+  margin: 6rem 0;
+}
+
+.hero-img {
+  margin-top: 5rem;
+}
+
+.hero-img img{
+  width: 20rem;
+  border-radius: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 5rem;
+}
+
+.hero-content p {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}

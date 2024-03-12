@@ -1,0 +1,107 @@
+.nav-wrapper {
+  background: #fff;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(50px);
+}
+
+.nav-content {
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 4rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.nav-content ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.nav-content li {
+  margin: 0 1.5rem;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #272F6F;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-item::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  position: absolute;
+  background: #ec1d24;
+  border-radius: 0.5rem;
+  bottom: -0.6rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.menu-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.4rem;
+  color: #F1F1F6;
+  background: #272F6F;
+  line-height: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: none;
+}
+
+.menu-btn:hover {
+  color: #272F6F;
+  background: #F1F1F6;
+  border: 1px solid #272F6F;
+}
+
+@media (max-width: 769px) {
+  .logo {
+    width: 3rem;
+    height: auto;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-content ul {
+    display: none;
+  }
+}
+
+@media (max-width: 1325px) {
+  .nav-wrapper {
+    padding: 0 2rem;
+  }
+}
