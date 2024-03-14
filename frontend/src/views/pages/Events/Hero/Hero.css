@@ -35,7 +35,7 @@
   margin-top: 5rem;
 }
 
-.hero-img img{
+.hero-img img {
   width: 20rem;
   border-radius: 2rem;
 }
@@ -52,4 +52,43 @@
   font-weight: 400;
   margin-bottom: 1rem;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    margin: 4rem 0;
+  }
+  .hero-content h2,
+  .hero-content p {
+    width: auto;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-container::after,
+  .hero-container::before {
+    content: " ";
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .hero-container::after {
+    top: 0rem;
+    left: 0rem;
+  }
+
+  .hero-container::before {
+    bottom: 2rem;
+    right: 0rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .hero-content h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }

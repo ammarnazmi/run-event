@@ -1,20 +1,20 @@
 .description-container {
-  margin: 4rem 0;
+  margin-top: 2rem;
   position: relative;
   text-align: center;
   background: #fff;
+  max-height: 7rem;
 }
 
 .description-container h5 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 3rem;
 }
 
 .description-content {
   background: #272f6f;
   border-radius: 0.65rem;
-  top: -6rem
+  top: -6rem;
 }
 
 .description-card {
@@ -37,4 +37,17 @@
   font-size: 0.9rem;
   font-weight: 400;
   color: #f1f1f6c0;
+}
+
+@media (max-width: 1024px) {
+  .description-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .description-card {
+    padding: 0.5rem;
+  }
 }

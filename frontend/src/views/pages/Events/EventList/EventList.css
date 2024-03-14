@@ -1,0 +1,46 @@
+.event-list-container {
+  background: #fff;
+  color: #272f6f;
+  padding-top: 4rem;
+}
+
+.card {
+  border-radius: 0.65rem;
+  background: #f1f1f6;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0.65rem;
+  transition: all 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+
+
+
