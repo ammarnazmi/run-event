@@ -8,6 +8,6 @@
 }
 
 body {
-  color: #fff;
-  background: #46454a;
+  color: #fff !important;
+  background: #46454a !important;
 }
