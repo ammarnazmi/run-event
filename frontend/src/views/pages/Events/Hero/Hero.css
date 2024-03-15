@@ -4,13 +4,23 @@
   position: relative;
 }
 
-.hero-container::after,
+.hero-container::after {
+  content: " ";
+  width: 28.125rem;
+  height: 28.125rem;
+  border-radius: 28.125rem;
+  background: #c44747;
+  position: absolute;
+  z-index: -1;
+  filter: blur(255px);
+}
+
 .hero-container::before {
   content: " ";
   width: 28.125rem;
   height: 28.125rem;
   border-radius: 28.125rem;
-  background: #b8ddf3;
+  background: #272F6F;
   position: absolute;
   z-index: -1;
   filter: blur(255px);
