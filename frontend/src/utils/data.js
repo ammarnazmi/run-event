@@ -26,7 +26,7 @@ export const DUMMY_LIST_DATA = [
   },
   {
     image: "/src/assets/run2.jpg",
-    title: "Ramadan Run 2024",
+    title: "RC Coaching X Elevate Perfomance Coaching - Desaru Torture Camp",
   },
   {
     image: "/src/assets/run3.jpg",
