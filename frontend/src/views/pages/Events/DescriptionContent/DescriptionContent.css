@@ -4,6 +4,8 @@
   text-align: center;
   background: #fff;
   max-height: 7rem;
+  padding: 0 10px;
+
 }
 
 .description-container h5 {
@@ -18,7 +20,7 @@
 }
 
 .description-card {
-  padding: 1.5rem;
+  padding: 1rem;
   cursor: grab;
 }
 
