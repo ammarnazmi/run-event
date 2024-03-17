@@ -22,6 +22,13 @@ export default function DescriptionContent() {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 996,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
 

@@ -1,42 +1,76 @@
 .bg-white-event-list {
   background-color: #fff;
 }
+
 .card {
-  min-width: 100% !important;
+  box-shadow: -1px 5px 17px -7px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: -1px 5px 17px -7px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: -1px 5px 17px -7px rgba(0, 0, 0, 0.29);
+  cursor: pointer;
 }
 
+.card,
+.card > img {
+  border-radius: 0.65rem !important;
+}
 
-.card-content {
+.card-body {
   margin: 0.8rem;
 }
 
-.card-content > h3{
+.card-body > h3 {
   font-size: 1.25rem;
   font-weight: 500;
+  color: #272f6f;
 }
 
-@media screen and (max-width: 768px){
+.card:hover {
+  box-shadow: -1px 5px 17px -7px rgba(10, 19, 99, 0.678);
+  -webkit-box-shadow: -1px 5px 17px -7px rgba(74, 89, 231, 0.678);
+  -moz-box-shadow: -1px 5px 17px -7px rgba(74, 89, 231, 0.678);
+  cursor: pointer;
+}
+
+.location {
+  margin: 1rem 0;
+  color: #ec1d24;
+  font-size: 0.75rem;
+}
+
+.event-date {
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
   .col-3 {
     width: 33.33% !important;
   }
 
+  .card-body > h3 {
+    font-size: 1.1rem;
+  }
 }
 
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .col-3 {
     width: 50% !important;
   }
 
-  .card-content > h3{
+  .card-body > h3 {
     font-size: 1rem;
-    font-weight: 500;
   }
 }
 
-@media (max-width: 425px){
-  .card-content > h3{
+@media (max-width: 425px) {
+  .card-body > h3 {
     font-size: 0.8rem;
-    font-weight: 500;
+  }
+
+  .location i {
+    font-size: 0.6rem;
+  }
+
+  .event-date {
+    font-size: 0.6rem;
   }
 }
