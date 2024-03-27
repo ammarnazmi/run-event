@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Event extends Model
 {
     use HasFactory;
+
+    public function eventImages(): HasMany
+    {
+        return $this->hasMany(EventImage::class);
+    }
 }
